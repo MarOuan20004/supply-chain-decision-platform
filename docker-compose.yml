@@ -1,0 +1,50 @@
+services:
+  mlflow:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: supply-chain-mlflow
+    command: >
+      mlflow server
+      --backend-store-uri sqlite:///mlruns/mlflow.db
+      --default-artifact-root /app/mlruns/artifacts
+      --host 0.0.0.0
+      --port 5000
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./mlruns:/app/mlruns
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: supply-chain-api
+    depends_on:
+      mlflow:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+    environment:
+      SUPPLY_CHAIN_MLFLOW_TRACKING_URI: "http://mlflow:5000"
+      SUPPLY_CHAIN_SQLITE_DB_PATH: "/app/data/supply_chain.db"
+      SUPPLY_CHAIN_CHAMPION_ALIAS: "champion"
+      SUPPLY_CHAIN_AGENT_TRACES_PATH: "/app/logs/agent_traces.jsonl"
+      SUPPLY_CHAIN_LLM_PROVIDER: "mock"
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./mlruns:/app/mlruns
+
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    restart: unless-stopped
