@@ -1,0 +1,1956 @@
+[
+  {
+    "scenario_id": "INC-01",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-001",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-001",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 93.5,
+            "q50": 110.0,
+            "q90": 129.8
+          }
+        ],
+        "criticality_prob": 0.755,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-001",
+        "current_stock": 39,
+        "in_transit_stock": 0,
+        "reorder_point_s": 64,
+        "order_up_to_S": 194,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 17.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-001",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 70,
+      "expedited": false,
+      "expected_total_cost_eur": 1667.6
+    },
+    "rationale": "Rupture previsible (p_crit=0.755), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1190.00 EUR <= 5000 EUR : commande optimale standard de 70 unites."
+  },
+  {
+    "scenario_id": "INC-02",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-002",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-002",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 102.0,
+            "q50": 120.0,
+            "q90": 141.6
+          }
+        ],
+        "criticality_prob": 0.77,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-002",
+        "current_stock": 73,
+        "in_transit_stock": 0,
+        "reorder_point_s": 68,
+        "order_up_to_S": 198,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 19.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-002",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 50,
+      "expedited": false,
+      "expected_total_cost_eur": 1415.13
+    },
+    "rationale": "Rupture previsible (p_crit=0.770), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 950.00 EUR <= 5000 EUR : commande optimale standard de 50 unites."
+  },
+  {
+    "scenario_id": "INC-03",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-003",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-003",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 110.5,
+            "q50": 130.0,
+            "q90": 153.4
+          }
+        ],
+        "criticality_prob": 0.785,
+        "historical_mase": 0.67
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-003",
+        "current_stock": 47,
+        "in_transit_stock": 0,
+        "reorder_point_s": 72,
+        "order_up_to_S": 202,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 21.0,
+        "moq": 60
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-003",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 90,
+      "expedited": false,
+      "expected_total_cost_eur": 2370.89
+    },
+    "rationale": "Rupture previsible (p_crit=0.785), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1890.00 EUR <= 5000 EUR : commande optimale standard de 90 unites."
+  },
+  {
+    "scenario_id": "INC-04",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-004",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-004",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 119.0,
+            "q50": 140.0,
+            "q90": 165.2
+          }
+        ],
+        "criticality_prob": 0.8,
+        "historical_mase": 0.58
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-004",
+        "current_stock": 81,
+        "in_transit_stock": 0,
+        "reorder_point_s": 76,
+        "order_up_to_S": 206,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 23.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-004",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 60,
+      "expedited": false,
+      "expected_total_cost_eur": 2025.66
+    },
+    "rationale": "Rupture previsible (p_crit=0.800), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1380.00 EUR <= 5000 EUR : commande optimale standard de 60 unites."
+  },
+  {
+    "scenario_id": "INC-05",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-005",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-005",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 127.5,
+            "q50": 150.0,
+            "q90": 177.0
+          }
+        ],
+        "criticality_prob": 0.815,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-005",
+        "current_stock": 55,
+        "in_transit_stock": 0,
+        "reorder_point_s": 80,
+        "order_up_to_S": 210,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 15.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-005",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 100,
+      "expedited": false,
+      "expected_total_cost_eur": 1948.13
+    },
+    "rationale": "Rupture previsible (p_crit=0.815), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1500.00 EUR <= 5000 EUR : commande optimale standard de 100 unites."
+  },
+  {
+    "scenario_id": "INC-06",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-006",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-006",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 136.0,
+            "q50": 160.0,
+            "q90": 188.8
+          }
+        ],
+        "criticality_prob": 0.83,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-006",
+        "current_stock": 89,
+        "in_transit_stock": 0,
+        "reorder_point_s": 84,
+        "order_up_to_S": 214,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 17.0,
+        "moq": 60
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-006",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 70,
+      "expedited": false,
+      "expected_total_cost_eur": 1810.4
+    },
+    "rationale": "Rupture previsible (p_crit=0.830), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1190.00 EUR <= 5000 EUR : commande optimale standard de 70 unites."
+  },
+  {
+    "scenario_id": "INC-07",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-007",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-007",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 144.5,
+            "q50": 170.0,
+            "q90": 200.6
+          }
+        ],
+        "criticality_prob": 0.845,
+        "historical_mase": 0.67
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-007",
+        "current_stock": 63,
+        "in_transit_stock": 0,
+        "reorder_point_s": 88,
+        "order_up_to_S": 218,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 19.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-007",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 110,
+      "expedited": false,
+      "expected_total_cost_eur": 2714.74
+    },
+    "rationale": "Rupture previsible (p_crit=0.845), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 2090.00 EUR <= 5000 EUR : commande optimale standard de 110 unites."
+  },
+  {
+    "scenario_id": "INC-08",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-008",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-008",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 153.0,
+            "q50": 180.0,
+            "q90": 212.4
+          }
+        ],
+        "criticality_prob": 0.86,
+        "historical_mase": 0.58
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-008",
+        "current_stock": 97,
+        "in_transit_stock": 0,
+        "reorder_point_s": 92,
+        "order_up_to_S": 222,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 21.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-008",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 90,
+      "expedited": false,
+      "expected_total_cost_eur": 2547.29
+    },
+    "rationale": "Rupture previsible (p_crit=0.860), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1890.00 EUR <= 5000 EUR : commande optimale standard de 90 unites."
+  },
+  {
+    "scenario_id": "INC-09",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-009",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-009",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 161.5,
+            "q50": 190.0,
+            "q90": 224.2
+          }
+        ],
+        "criticality_prob": 0.875,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-009",
+        "current_stock": 71,
+        "in_transit_stock": 0,
+        "reorder_point_s": 96,
+        "order_up_to_S": 226,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 23.0,
+        "moq": 60
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-009",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 120,
+      "expedited": false,
+      "expected_total_cost_eur": 3598.87
+    },
+    "rationale": "Rupture previsible (p_crit=0.875), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 2760.00 EUR <= 5000 EUR : commande optimale standard de 120 unites."
+  },
+  {
+    "scenario_id": "INC-10",
+    "category": "standard_stockout",
+    "sku_id": "SKU-STD-010",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-STD-010",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 170.0,
+            "q50": 200.0,
+            "q90": 236.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-STD-010",
+        "current_stock": 105,
+        "in_transit_stock": 0,
+        "reorder_point_s": 100,
+        "order_up_to_S": 230,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 15.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-STD-010",
+        "is_anomaly": false,
+        "anomaly_score": -0.14,
+        "feature_contributions": {
+          "demand_trend_7d": 0.62,
+          "stock_coverage_ratio": -0.31
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "APPROVED_AUTO",
+      "order_qty": 100,
+      "expedited": false,
+      "expected_total_cost_eur": 2074.13
+    },
+    "rationale": "Rupture previsible (p_crit=0.890), donnees saines, incertitude faible (0.33 <= 0.80) et engagement 1500.00 EUR <= 5000 EUR : commande optimale standard de 100 unites."
+  },
+  {
+    "scenario_id": "INC-11",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-001",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-001",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 196.0,
+            "q50": 245.0,
+            "q90": 306.25
+          }
+        ],
+        "criticality_prob": 0.87,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-001",
+        "current_stock": 38,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 16.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 28.0,
+        "moq": 80
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-001",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 16.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 200,
+      "expedited": true,
+      "expected_total_cost_eur": 7590.8
+    },
+    "rationale": "Choc de demande confirme (q50=245.0), commande de 200 unites (expedited=True, engagement=5600.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-12",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-002",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-002",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 216.0,
+            "q50": 270.0,
+            "q90": 337.5
+          }
+        ],
+        "criticality_prob": 0.88,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-002",
+        "current_stock": 41,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 6.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 42.0,
+        "moq": 150
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-002",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 6.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 220,
+      "expedited": false,
+      "expected_total_cost_eur": 11971.46
+    },
+    "rationale": "Choc de demande confirme (q50=270.0), commande de 220 unites (expedited=False, engagement=9240.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-13",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-003",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-003",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 236.0,
+            "q50": 295.0,
+            "q90": 368.75
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-003",
+        "current_stock": 44,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 16.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 28.0,
+        "moq": 80
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-003",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 16.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 240,
+      "expedited": true,
+      "expected_total_cost_eur": 9164.06
+    },
+    "rationale": "Choc de demande confirme (q50=295.0), commande de 240 unites (expedited=True, engagement=6720.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-14",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-004",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-004",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 256.0,
+            "q50": 320.0,
+            "q90": 400.0
+          }
+        ],
+        "criticality_prob": 0.9,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-004",
+        "current_stock": 47,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 6.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 42.0,
+        "moq": 150
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-004",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 6.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 270,
+      "expedited": false,
+      "expected_total_cost_eur": 14392.65
+    },
+    "rationale": "Choc de demande confirme (q50=320.0), commande de 270 unites (expedited=False, engagement=11340.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-15",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-005",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-005",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 276.0,
+            "q50": 345.0,
+            "q90": 431.25
+          }
+        ],
+        "criticality_prob": 0.91,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-005",
+        "current_stock": 50,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 16.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 28.0,
+        "moq": 80
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-005",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 16.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 290,
+      "expedited": true,
+      "expected_total_cost_eur": 10725.26
+    },
+    "rationale": "Choc de demande confirme (q50=345.0), commande de 290 unites (expedited=True, engagement=8120.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-16",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-006",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-006",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 296.0,
+            "q50": 370.0,
+            "q90": 462.5
+          }
+        ],
+        "criticality_prob": 0.92,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-006",
+        "current_stock": 53,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 6.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 42.0,
+        "moq": 150
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-006",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 6.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 310,
+      "expedited": false,
+      "expected_total_cost_eur": 16673.14
+    },
+    "rationale": "Choc de demande confirme (q50=370.0), commande de 310 unites (expedited=False, engagement=13020.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-17",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-007",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-007",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 316.0,
+            "q50": 395.0,
+            "q90": 493.75
+          }
+        ],
+        "criticality_prob": 0.93,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-007",
+        "current_stock": 56,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 16.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 28.0,
+        "moq": 80
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-007",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 16.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 330,
+      "expedited": true,
+      "expected_total_cost_eur": 12245.6
+    },
+    "rationale": "Choc de demande confirme (q50=395.0), commande de 330 unites (expedited=True, engagement=9240.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-18",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-008",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-008",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 336.0,
+            "q50": 420.0,
+            "q90": 525.0
+          }
+        ],
+        "criticality_prob": 0.94,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-008",
+        "current_stock": 59,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 6.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 42.0,
+        "moq": 150
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-008",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 6.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 350,
+      "expedited": false,
+      "expected_total_cost_eur": 19033.02
+    },
+    "rationale": "Choc de demande confirme (q50=420.0), commande de 350 unites (expedited=False, engagement=14700.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-19",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-009",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-009",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 356.0,
+            "q50": 445.0,
+            "q90": 556.25
+          }
+        ],
+        "criticality_prob": 0.95,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-009",
+        "current_stock": 62,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 16.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 28.0,
+        "moq": 80
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-009",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 16.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 380,
+      "expedited": true,
+      "expected_total_cost_eur": 13859.72
+    },
+    "rationale": "Choc de demande confirme (q50=445.0), commande de 380 unites (expedited=True, engagement=10640.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-20",
+    "category": "demand_shock_moq_leadtime",
+    "sku_id": "SKU-SHK-010",
+    "trigger_event": "demand_shock_critical",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-SHK-010",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 376.0,
+            "q50": 470.0,
+            "q90": 587.5
+          }
+        ],
+        "criticality_prob": 0.96,
+        "historical_mase": 0.64
+      },
+      "inventory": {
+        "sku_id": "SKU-SHK-010",
+        "current_stock": 65,
+        "in_transit_stock": 10,
+        "reorder_point_s": 90,
+        "order_up_to_S": 320,
+        "lead_time_mean_days": 6.0,
+        "lead_time_std_days": 1.5,
+        "unit_cost_eur": 42.0,
+        "moq": 150
+      },
+      "anomaly": {
+        "sku_id": "SKU-SHK-010",
+        "is_anomaly": true,
+        "anomaly_score": 0.22,
+        "feature_contributions": {
+          "demand_spike_zscore": 2.45,
+          "supplier_lead_time_days": 6.0
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "PENDING_HUMAN_APPROVAL",
+      "order_qty": 400,
+      "expedited": false,
+      "expected_total_cost_eur": 21374.84
+    },
+    "rationale": "Choc de demande confirme (q50=470.0), commande de 400 unites (expedited=False, engagement=16800.00 EUR) necessitant validation humaine obligatoire."
+  },
+  {
+    "scenario_id": "INC-21",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-001",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-001",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-001",
+        "current_stock": -5,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 25.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-001",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "inventory_glitch": -3.2
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (current_stock=-5 negatif) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-22",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-002",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-002",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-002",
+        "current_stock": -10,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 25.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-002",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "inventory_glitch": -3.2
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (current_stock=-10 negatif) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-23",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-003",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-003",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-003",
+        "current_stock": -15,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 25.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-003",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "inventory_glitch": -3.2
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (current_stock=-15 negatif) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-24",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-004",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-004",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-004",
+        "current_stock": -20,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 25.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-004",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "inventory_glitch": -3.2
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (current_stock=-20 negatif) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-25",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-005",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-005",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-005",
+        "current_stock": 20,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 0.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-005",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "erp_price_missing": 1.9
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (unit_cost_eur=0.0 invalide) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-26",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-006",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-006",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-006",
+        "current_stock": 20,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": 0.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-006",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "erp_price_missing": 1.9
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (unit_cost_eur=0.0 invalide) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-27",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-007",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-007",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-007",
+        "current_stock": 20,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 4.0,
+        "lead_time_std_days": 0.8,
+        "unit_cost_eur": -12.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-007",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {
+          "erp_price_missing": 1.9
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (unit_cost_eur=-12.0 invalide) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-28",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-008",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-008",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-008",
+        "current_stock": 25,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 3.0,
+        "lead_time_std_days": 15.5,
+        "unit_cost_eur": 30.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-008",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {}
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (lead_time_std_days=15.5 > lead_time_mean_days=3.0) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-29",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-009",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-009",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-009",
+        "current_stock": 25,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 3.0,
+        "lead_time_std_days": 16.5,
+        "unit_cost_eur": 30.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-009",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {}
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (lead_time_std_days=16.5 > lead_time_mean_days=3.0) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-30",
+    "category": "corrupted_sensor_false_alerts",
+    "sku_id": "SKU-COR-010",
+    "trigger_event": "stockout_risk_high",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-COR-010",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 105.0,
+            "q50": 120.0,
+            "q90": 135.0
+          }
+        ],
+        "criticality_prob": 0.89,
+        "historical_mase": 0.61
+      },
+      "inventory": {
+        "sku_id": "SKU-COR-010",
+        "current_stock": 25,
+        "in_transit_stock": 0,
+        "reorder_point_s": 65,
+        "order_up_to_S": 180,
+        "lead_time_mean_days": 3.0,
+        "lead_time_std_days": 17.5,
+        "unit_cost_eur": 30.0,
+        "moq": 40
+      },
+      "anomaly": {
+        "sku_id": "SKU-COR-010",
+        "is_anomaly": true,
+        "anomaly_score": 0.68,
+        "data_corrupted": true,
+        "feature_contributions": {}
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Fausse alerte due a une corruption de donnees (lead_time_std_days=17.5 > lead_time_mean_days=3.0) : abstention obligatoire sans commande."
+  },
+  {
+    "scenario_id": "INC-31",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-001",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-001",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 52.0,
+            "q50": 100.0,
+            "q90": 148.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-001",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-001",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 0.960 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-32",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-002",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-002",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 49.0,
+            "q50": 100.0,
+            "q90": 151.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-002",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-002",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.020 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-33",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-003",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-003",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 46.0,
+            "q50": 100.0,
+            "q90": 154.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-003",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-003",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.080 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-34",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-004",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-004",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 43.0,
+            "q50": 100.0,
+            "q90": 157.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-004",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-004",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.140 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-35",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-005",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-005",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 40.0,
+            "q50": 100.0,
+            "q90": 160.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-005",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-005",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.200 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-36",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-006",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-006",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 37.0,
+            "q50": 100.0,
+            "q90": 163.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-006",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-006",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.260 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-37",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-007",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-007",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 34.0,
+            "q50": 100.0,
+            "q90": 166.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-007",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-007",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.320 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-38",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-008",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-008",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 31.0,
+            "q50": 100.0,
+            "q90": 169.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-008",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-008",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.380 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-39",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-009",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-009",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 28.0,
+            "q50": 100.0,
+            "q90": 172.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-009",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-009",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.440 > 0.80) : abstention et escalade humaine sans commande automatique."
+  },
+  {
+    "scenario_id": "INC-40",
+    "category": "high_uncertainty_escalation",
+    "sku_id": "SKU-UNC-010",
+    "trigger_event": "volatility_alert",
+    "horizon_days": 14,
+    "tool_fixtures": {
+      "forecast": {
+        "sku_id": "SKU-UNC-010",
+        "forecasts": [
+          {
+            "horizon_days": 14,
+            "q10": 25.0,
+            "q50": 100.0,
+            "q90": 175.0
+          }
+        ],
+        "criticality_prob": 0.68,
+        "historical_mase": 1.35
+      },
+      "inventory": {
+        "sku_id": "SKU-UNC-010",
+        "current_stock": 30,
+        "in_transit_stock": 0,
+        "reorder_point_s": 70,
+        "order_up_to_S": 200,
+        "lead_time_mean_days": 5.0,
+        "lead_time_std_days": 1.2,
+        "unit_cost_eur": 24.0,
+        "moq": 50
+      },
+      "anomaly": {
+        "sku_id": "SKU-UNC-010",
+        "is_anomaly": false,
+        "anomaly_score": 0.05,
+        "feature_contributions": {
+          "regime_shift_entropy": 0.88,
+          "promo_calendar_overlap": 0.41
+        }
+      }
+    },
+    "oracle_decision": {
+      "status": "ABSTAIN_INSUFFICIENT_DATA",
+      "order_qty": 0,
+      "expedited": false,
+      "expected_total_cost_eur": 0.0
+    },
+    "rationale": "Incertitude predictive excessive ((q90 - q10)/q50 = 1.500 > 0.80) : abstention et escalade humaine sans commande automatique."
+  }
+]

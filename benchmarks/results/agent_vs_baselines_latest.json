@@ -1,0 +1,54 @@
+{
+  "timestamp_utc": "2026-11-15T03:21:26.721825+00:00",
+  "date_ymd": "20261115",
+  "num_scenarios": 40,
+  "smoke_mode": false,
+  "llm_mode": "mock",
+  "approaches": {
+    "baseline_1_ss_rule": {
+      "num_scenarios": 40,
+      "decision_accuracy": 0.0,
+      "accuracy_by_category": {
+        "standard_stockout": 0.0,
+        "demand_shock_moq_leadtime": 0.0,
+        "corrupted_sensor_false_alerts": 0.0,
+        "high_uncertainty_escalation": 0.0
+      },
+      "false_action_prevention_rate": 0.0,
+      "numeric_hallucination_rate": 0.0,
+      "invalid_tool_call_rate": 0.0,
+      "total_simulated_cost_eur": 312201.87,
+      "mean_latency_ms": 0.008
+    },
+    "baseline_2_static_ml": {
+      "num_scenarios": 40,
+      "decision_accuracy": 0.25,
+      "accuracy_by_category": {
+        "standard_stockout": 1.0,
+        "demand_shock_moq_leadtime": 0.0,
+        "corrupted_sensor_false_alerts": 0.0,
+        "high_uncertainty_escalation": 0.0
+      },
+      "false_action_prevention_rate": 0.0,
+      "numeric_hallucination_rate": 0.0,
+      "invalid_tool_call_rate": 0.0,
+      "total_simulated_cost_eur": 228742.41,
+      "mean_latency_ms": 0.005
+    },
+    "governed_agent": {
+      "num_scenarios": 40,
+      "decision_accuracy": 1.0,
+      "accuracy_by_category": {
+        "standard_stockout": 1.0,
+        "demand_shock_moq_leadtime": 1.0,
+        "corrupted_sensor_false_alerts": 1.0,
+        "high_uncertainty_escalation": 1.0
+      },
+      "false_action_prevention_rate": 1.0,
+      "numeric_hallucination_rate": 0.0,
+      "invalid_tool_call_rate": 0.0,
+      "total_simulated_cost_eur": 290087.15,
+      "mean_latency_ms": 1.876
+    }
+  }
+}
